@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="resume">
+            <div style="display: flex; justify-content: start; align-items: center;">
+            <input type="text" placeholder="Mr. XYZ" class="name" id="name" disabled><img src="images/edit.png" id="pen8" width="16" class="block" alt="">
+            </div>
+            <div style="display: flex; justify-content: start; align-items: center;">
+                <input type="text" placeholder="Account Manager" class="skyBlue position" id="position" disabled><img src="images/edit.png" id="pen9" width="16" class="block" alt="">
+            </div>
+            <div id="contactDeatils">
+                <div id="number" width="200">
+                    <div class="numC">
+                        <img src="images/phone-call.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="+91-1234567890" class="num" id="num" disabled><img src="images/edit.png" id="pen10" width="16" class="block" alt="">
+                        </div>
+                    </div>
+                    <div class="numC" style="padding-top: 10px;">
+                        <img src="images/placeholder.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="New York, USA" class="num" id="address" disabled><img src="images/edit.png" id="pen11" width="16" class="block" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="emailC">
+                <div class="emailD">
+                    <img src="images/email.png" alt="">
+                    <div style="display: flex; justify-content: start; align-items: center;">
+                        <input type="text" placeholder="yourName@mail.com" class="num" id="email" disabled><img src="images/edit.png" id="pen12" width="16" class="block" alt="">
+                    </div>
+                </div>
+                    
+                </div>
+                <div class="emailC">
+                <div class="emailD">
+                    <img src="images/linkedin.png" alt="">
+                    <div style="display: flex; justify-content: start; align-items: center;">
+                        <input type="text" placeholder="yourName@mail.com" class="num" id="linkedin" disabled><img src="images/edit.png" id="pen13" width="16" class="block" alt="">
+                    </div>
+                </div>
+                    
+                </div>
+            </div>
+            <div id="experience">
+                <h1>EXPERIENCE</h1>
+                <hr>
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Key Account Manager" class="expPos" id="exp1" disabled><img src="images/edit.png" id="pen14" width="16" class="block" alt="">
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Lauzon" class="skyBlue expCom" id="expCom" disabled><img src="images/edit.png" id="pen15" width="13" class="block" alt="">
+                </div>
+                <div id="date-location" class="date-location">
+                    <div id="cal">
+                        <img src="images/calendar.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="01-01-2024" class="date1 dateWidth" id="date1" disabled><img src="images/edit.png" id="pen16" width="12" class="block" alt=""><span>- ongoing</span>
+                        </div>
+                    </div>
+                    <div id="loc">
+                        <img src="images/pin.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="New Delhi, India" class="date1" id="add1" disabled><img src="images/edit.png" id="pen17" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center;">
+                    <textarea type="text" placeholder="Lorem, ipsum dolor sit amet consectetur adipis" class="date1" id="about1" style="font-size: 14px; height: 15px;" disabled></textarea><img src="images/edit.png" id="pen18" style="margin-left: 8px;" width="12" class="block" alt="">
+                </div>
+                <ul id="ex-list">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, libero?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure. Reiciendis cum commodi.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nulla ex?</li>
+                </ul>
+            </div>
+            <div id="experience">
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Senior Account Manager" class="expPos" id="exp2" disabled><img src="images/edit.png" id="pen19" width="16" class="block" alt="">
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Kopec INC." class="skyBlue expCom" id="expCom1" disabled><img src="images/edit.png" id="pen20" width="13" class="block" alt="">
+                </div>
+                <div id="date-location" class="date-location">
+                    <div id="cal">
+                        <img src="images/calendar.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="01-01-2022" class="date1" id="date2" style="width: 25%;" disabled><img src="images/edit.png" id="pen21" width="12" class="block" alt=""><span> -- <input type="text" placeholder="01-01-2016" class="date1 dateWidth" id="date4c" style="margin-left: 5px; width: 40%;" disabled><img src="images/edit.png" id="pen35" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                    <div id="loc">
+                        <img src="images/pin.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="Bangalore, India" class="date1" id="add3" disabled><img src="images/edit.png" id="pen22" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center;">
+                    <textarea type="text" placeholder="Lorem, ipsum dolor sit amet consectetur adipis" class="date1" id="about2" style="font-size: 14px; height: 15px;" disabled></textarea><img src="images/edit.png" id="pen23" style="margin-left: 8px;" width="12" class="block" alt="">
+                </div>
+                <ul id="ex-list">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, libero?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure. Reiciendis cum commodi.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nulla ex?</li>
+                </ul>
+            </div>
+            <div id="experience">
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Account Manager Infrastructure & Application Development" class="expPos" id="exp3" style="width: 90%;" disabled><img src="images/edit.png" id="pen24" width="16" class="block" alt="">
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Drouin S.R. INC." class="skyBlue expCom" id="expCom2" disabled><img src="images/edit.png" id="pen25" width="13" class="block" alt="">
+                </div>
+                <div id="date-location" class="date-location">
+                    <div id="cal">
+                        <img src="images/calendar.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="01-01-2022" class="date1" id="date3" style="width: 25%;" disabled><img src="images/edit.png" id="pen26" width="12" class="block" alt=""><span> -- <input type="text" placeholder="01-01-2016" class="date1" id="date4b" style="margin-left: 5px; width: 40%;" disabled><img src="images/edit.png" id="pen34" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                    <div id="loc">
+                        <img src="images/pin.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="Bangalore, India" class="date1" id="add4" disabled><img src="images/edit.png" id="pen27" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center;">
+                    <textarea type="text" placeholder="Lorem, ipsum dolor sit amet consectetur adipis" class="date1" id="about3" style="font-size: 14px; height: 15px;" disabled></textarea><img src="images/edit.png" id="pen28" style="margin-left: 8px;" width="12" class="block" alt="">
+                </div>
+                <ul id="ex-list">
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, libero?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, iure. Reiciendis cum commodi.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Lorem ipsum dolor sit amet.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat, nulla ex?</li>
+                </ul>
+            </div>
+            <div id="experience">
+                <h1>EDUCATION</h1>
+                <hr>
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="Master of Marketing Management [MMM]" class="expPos" id="edu1" style="width: 90%;" disabled><img src="images/edit.png" id="pen29" width="16" class="block" alt="">
+                </div>
+                <div style="display: flex; justify-content: start; align-items: center; margin-top: 20px;">
+                    <input type="text" placeholder="AKTU University" class="skyBlue expCom" id="eduUni" disabled><img src="images/edit.png" id="pen30" width="13" class="block" alt="">
+                </div>
+                <div id="date-location" class="date-location">
+                    <div id="cal">
+                        <img src="images/calendar.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="01-01-2014" class="date1 dateWidth" id="date4" disabled><img src="images/edit.png" id="pen31" width="12" class="block" alt=""> -- <input type="text" placeholder="01-01-2016" class="date1 dateWidth" id="date4a" style="margin-left: 5px;" disabled><img src="images/edit.png" id="pen33" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                    <div id="loc">
+                        <img src="images/pin.png" alt="">
+                        <div style="display: flex; justify-content: start; align-items: center;">
+                            <input type="text" placeholder="Ghaziabad, India" class="date1" id="eduAdd" disabled><img src="images/edit.png" id="pen32" width="12" class="block" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="keyAchieve">
+                <h1>KEY ACHIEVEMENTS</h1>
+                <hr>
+                <table border="0" align="center" cellspacing="0" cellpadding="0" width="100%">
+                    <tbody>
+                        <tr>
+                            <td align="center" width="100%" style="padding-top: 15px;">
+                                <table border="0" align="left" cellspacing="0" cellpadding="0" width="48%" style="border-bottom: 2px #c3c3c3 dotted; padding-bottom: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top" style="padding-right: 10px;">
+                                                <img id="rocket" src="images/rocket.png" width="20">
+                                            </td>
+                                            <td>
+                                                <table border="0" align="left" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="display: flex; justify-content: start; align-items: center;">
+                                                                <input type="text" placeholder="Building the future" class="building" id="building" disabled><img src="images/edit.png" id="pen1" width="16" class="block" alt="">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius!</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" align="right" cellspacing="0" cellpadding="0" width="48%" style="border-bottom: 2px #c3c3c3 dotted; padding-bottom: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top" style="padding-right: 10px;">
+                                                <img src="images/diamond.png" width="20">
+                                            </td>
+                                            <td>
+                                                <table border="0" align="left" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td style="display: flex; justify-content: start; align-items: center;">
+                                                                <input type="text" placeholder="Managing the largets accounts" class="building" id="building1" disabled><img src="images/edit.png" id="pen2" width="16" class="block" alt="">
+                                                                <!-- <h6></h6> -->
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius!</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td align="center" width="100%" style="padding-top: 15px;">
+                                <table border="0" align="left" cellspacing="0" cellpadding="0" width="48%" style="border-bottom: 2px #c3c3c3 dotted; padding-bottom: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top" style="padding-right: 10px;">
+                                                <img src="images/electric.png" width="20">
+                                            </td>
+                                            <td>
+                                                <table border="0" align="left" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" placeholder="Market Share - Key Accounts" class="building" id="building3" disabled><img src="images/edit.png" id="pen3" width="16" class="block" alt="">
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius!</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                <table border="0" align="right" cellspacing="0" cellpadding="0" width="48%" style="border-bottom: 2px #c3c3c3 dotted; padding-bottom: 10px;">
+                                    <tbody>
+                                        <tr>
+                                            <td align="center" valign="top" style="padding-right: 10px;">
+                                                <img src="images/summer.png" width="20">
+                                            </td>
+                                            <td>
+                                                <table border="0" align="left" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <input type="text" placeholder="Work life Balance" class="building" id="building4" disabled><img src="images/edit.png" id="pen4" width="16" class="block" alt="">
+                                                                
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>
+                                                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius!</p>
+                                                            </td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="experience">
+                <h1>Skills</h1>
+                <hr>
+                <div id="skills">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>BootStrap</span>
+                    <span>JavaScript</span>
+                    <span>PhotoShop</span>
+                    <span>Adobe XD</span>
+                    <span>WordPress</span>
+                </div>
+            </div>
+            <div id="experience">
+                <h1>LANGUAGES</h1>
+                <hr>
+                <div id="lang">
+                    <div class="english">
+                        <div class="eng-c">
+                            <img src="images/edit.png" id="pen5" width="16" class="block" alt=""><input type="text" placeholder="English" class="lang" id="english" disabled>
+                            <span>Advance</span>
+                        </div>
+                        <div class="eng-b">
+                            <div class="blue"></div>
+                        </div>
+                    </div>
+                    <div class="hindi">
+                        <div class="hin-c">
+                            <img src="images/edit.png" id="pen6" width="16" class="block" alt=""><input type="text" placeholder="Hindi" class="lang" id="hindi" disabled>
+                            <span>Native</span>
+                        </div>
+                        <div class="hin-b">
+                            <div class="blue"></div>
+                        </div>
+                    </div>
+                    <div class="urdu">
+                        <div class="urd-c">
+                            <img src="images/edit.png" id="pen7" width="16" class="block" alt=""><input type="text" placeholder="urdu" class="lang" id="urdu" disabled>
+                            <span>Profencient</span>
+                        </div>
+                        <div class="urd-b">
+                            <div class="blue"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button id="preview">Preview</button>
+                <button id="submit">Submit</button>
+            </div>
+            <div class="copy">
+               <a href="https://techgadgetwire.com" target="_blank" style="text-decoration: none; color: black;">www.techgadgetwire.com</a>
+               <span>Created By: ARSAD</span>
+            </div>
+        </div>
+        <div class="down">
+            <div class="downBtn">
+                <button class="newResume">New Resume</button>
+                <button id="download">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
